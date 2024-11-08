@@ -1,0 +1,126 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    margin-top: 50px;
+    padding: 20px;
+  }
+  
+  /* Heading */
+  h3 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+  
+  h4, h5 {
+    color: #555;
+  }
+  
+  /* Cart Container */
+  .row {
+    margin-bottom: 20px;
+  }
+  
+  .col-md-8 {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #ffffff;
+  }
+  
+  .col-md-4 {
+    padding: 15px;
+  }
+  
+  /* Product Section */
+  .row.border-bottom.py-3.align-items-center {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .d-flex.align-items-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Product Image */
+  img {
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  img:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  
+  /* Remove Button */
+  button.btn-link.text-danger {
+    color: #dc3545;
+    font-size: 0.9rem;
+  }
+  
+  button.btn-link.text-danger:hover {
+    color: #a71d2a;
+    text-decoration: underline;
+  }
+  
+  /* Quantity Buttons */
+  button.btn-outline-secondary.btn-sm {
+    font-size: 0.8rem;
+    border-radius: 50%;
+    padding: 5px 10px;
+  }
+  
+  span.mx-2 {
+    font-weight: bold;
+  }
+  
+  /* Checkout Section */
+  .col-md-4 .shadow {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .col-md-4 p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+  /* Total Price */
+  .col-md-12.text-end h5 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  

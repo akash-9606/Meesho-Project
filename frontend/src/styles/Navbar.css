@@ -1,0 +1,314 @@
+.navbar-brand img {
+  width: 120px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 5px;
+}
+link{
+  font-size: 20px;
+}
+.fixed-navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: purple; 
+  border-bottom: 2px solid white;
+} 
+
+/* Search bar */
+.navbar-search input {
+  width: 280px;
+  height: 40px;
+  padding-left: 40px;
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background-color: #f5f5f5;
+  border: 2px solid purple;
+
+}
+
+
+.search-icon {
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #888;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none;
+}
+
+/* Navbar Links and Icons */
+.navbar-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-icons .icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Custom vertical separator */
+.vertical-separator {
+  height: 30px;
+  width: 1px;
+  background-color: #ddd;
+  margin: 0 10px;
+}
+
+/* Second Navbar */
+.second-navbar {
+  padding: 0;
+}
+
+.horizontal-list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.horizontal-list .nav-item {
+  flex: 1;
+  text-align: center;
+}
+
+.horizontal-list .nav-link {
+  font-size: 20px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+.horizontal-list .nav-link:hover {
+  color: #007bff;
+}
+
+/* For the icons and text colors */
+.icon-link {
+  color: hwb(0 34% 66%); /* Default color (black) same as navbar links */
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  color: hwb(0 34% 66%); /* Hover color (blue) same as navbar links */
+}
+
+/* General styling for icon container */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+/* Container for both navbars */
+.fixed-navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white; /* Ensure it has a background color to be visible on scroll */
+}
+
+/* Ensure the first and second navbars do not overlap */
+.navbar {
+  margin-bottom: 0; /* Remove any default margin to prevent overlap */
+}
+
+
+
+
+/* Main Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Dropdown Menu Item */
+.dropdown-menu .dropdown-item {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  font-size: 20px;
+}
+
+/* Dropdown Menu Item Hover */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show Dropdown Menu on Hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Ensure Dropdown Menu is within the Navbar */
+.navbar-nav {
+  position: relative;
+}
+
+
+
+
+
+@media (max-width: 767.98px) {
+ 
+  .navbar-icons {
+    justify-content: center;
+    margin-top: 10px; 
+  }
+  
+ 
+  .navbar-nav {
+    text-align: center; 
+    width: 100%; 
+  }
+
+  
+  .collapse .navbar-icons {
+    flex-direction: row;
+    width: 100%; 
+  }
+}
+
+
+
+
+
+/* Navbar.css */
+.profile-hover {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-hover .profile-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the dropdown right below the icon */
+  left: 50%; /* Start centering */
+  transform: translateX(-50%); /* Move the dropdown to the center */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 1000;
+  min-width: 150px; /* Set a minimum width for the dropdown */
+  text-align: center; /* Center the text within the dropdown */
+}
+
+.profile-hover:hover .profile-dropdown {
+  display: block;
+}
+
+.profile-dropdown a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.profile-dropdown a:hover {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+
+
+/* Navbar.css */
+
+/* Search icon positioning */
+.search-icon {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Mobile search bar handling */
+@media (max-width: 991px) {
+  .navbar-search {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .navbar-brand img {
+    width: 100px;
+  }
+
+  .navbar-icons .icon-link {
+    margin-left: 10px;
+  }
+}
+
+/* Custom vertical separator between items */
+.vertical-separator {
+  width: 1px;
+  height: 24px;
+  background-color: #ddd;
+  margin: 0 10px;
+}
+
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.profile-hover:hover .profile-dropdown {
+  display: block;
+}
+
+.icon-container {
+  cursor: pointer;
+}
+
+
+@media (max-width: 767px) {
+  .icon-container {
+    font-size: 12px;
+  }
+
+  .navbar-icons .icon-link {
+    flex-direction: column;
+    align-items: center;
+  }
+}

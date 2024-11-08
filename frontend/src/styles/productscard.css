@@ -1,0 +1,154 @@
+/* Ensure consistent card dimensions */
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    height: 400px; /* Set a fixed height */
+    width: 100%; /* Make it responsive */
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image styling for consistent appearance */
+  .product img {
+    height: 250px; /* Consistent image height */
+    width: 100%; /* Responsive image */
+    object-fit: cover; /* Ensures the image fits within the bounds */
+    transition: transform 0.3s ease; /* Smooth transition for image */
+  }
+  
+  /* Initially hide the icons */
+  .icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Hidden by default */
+    opacity: 0;
+    /*background-color: rgba(0, 0, 0, 0.5); /* Transparent dark background */
+    padding: 20px;
+    border-radius: 10px;
+    /* transition: opacity 0.4s ease, background-color 0.3s ease; */
+  }
+  
+  /* Show icons on hover with medium opacity and transparent background */
+  .product:hover .icons {
+    display: flex;
+    opacity: 1; /* Fully visible */
+   
+  }
+  
+  /* Icon styling */
+  .icons .icon {
+    font-size: 20px;
+    margin: 0 15px;
+    color: #f01b1be7; /* White color for contrast */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition for icon color */
+  }
+  
+  /* Change icon color on hover */
+  .icons .icon:hover {
+    color: black; /* Change to a highlighted color */
+  }
+  
+  /* Sale tag styling */
+  .tag {
+    color: white;
+    padding: 5px 10px;
+    background-color: red;
+    border-radius: 3px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  
+  .product-card-container {
+    width: 250px; /* Adjust to the desired width */
+    margin: auto;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-title {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .product-price {
+    color: black;
+  }
+  
+  .free-delivery {
+    font-size: 0.7rem;
+    color: #666;
+  }
+  
+  .product-rating {
+    font-size: 0.6rem;
+    color: white;
+  }
+  
+  .product-rating .rating-text {
+    margin-right: 4px;
+  }
+  /* Ensure consistent card dimensions */
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  height: 400px; /* Set a fixed height */
+  width: 100%; /* Make it responsive */
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image styling for consistent appearance */
+.product img {
+  height: 250px; /* Consistent image height */
+  width: 100%; /* Responsive image */
+  object-fit: cover; /* Ensures the image fits within the bounds */
+  transition: transform 0.3s ease; /* Smooth transition for image */
+}
+
+/* Rating styling */
+.product-rating {
+  font-size: 1.2rem; /* Increase the size for stars */
+}
+
+.product-rating .fa-star,
+.product-rating .fa-star-half-stroke {
+  color: #FFD700; /* Gold color for filled stars */
+  font-size: 1.2rem; /* Make stars bigger */
+}
+
+.product-rating .fa-regular.fa-star {
+  color: #ddd; /* Light gray color for empty stars */
+}

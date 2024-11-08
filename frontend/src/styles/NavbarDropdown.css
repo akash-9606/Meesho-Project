@@ -1,0 +1,53 @@
+/* CSS for responsive navbar without toggler */
+@media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-nav .nav-item {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .navbar-nav .dropdown-menu {
+      position: static;
+      float: none;
+    }
+  
+    .navbar-nav .dropdown-item {
+      width: 100%;
+    }
+  }
+  
+
+
+  /* Scrollable navbar for small screens */
+@media (max-width: 768px) {
+    .navbar-nav {
+      max-height: 300px; /* Set max height for scrolling */
+      overflow-y: auto;  /* Enable vertical scrolling */
+    }
+  }
+  
+  /* Adjust navbar to stack items vertically for small screens */
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      display: block;
+      width: 100%;
+    }
+  
+    .navbar-nav {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the left */
+    }
+  
+    .dropdown-menu {
+      position: relative; /* Fix positioning for dropdown on small screens */
+    }
+  }
+  
+
+
+  

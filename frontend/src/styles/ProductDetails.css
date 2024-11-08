@@ -1,0 +1,93 @@
+/* ProductDetails.css */
+
+/* Container for the product card */
+.product-card {
+    max-width: 800px; /* Increased max width for the product card */
+    margin: 20px auto; /* Center the card with auto margins */
+    padding: 15px; /* Padding inside the card */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s; /* Smooth transition for shadow */
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Image container styles */
+.item-image-parent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.item-image-main img {
+    max-height: 350px; /* Limit max height for main image */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Styles for the star rating */
+.star-rating {
+    margin: 5px 0; /* Margin for the star rating */
+}
+
+/* Small image container */
+.small-image-container {
+    margin-top: -150px; /* Moves the small images slightly upwards */
+    position: relative;
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center small images */
+}
+
+.small-images {
+    display: flex; /* Flexbox for horizontal alignment */
+    gap: 10px; /* Space between small images */
+}
+
+.small-images img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.small-images img:hover {
+    transform: scale(1.05); /* Adds a hover effect */
+}
+
+/* Button styles */
+.btn-lg {
+    padding: 10px 20px; /* Increase padding for larger buttons */
+    font-size: 1.1rem; /* Slightly larger font size for buttons */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .small-image-container {
+        margin-top: -10px; /* Adjust for smaller screens */
+        padding-left: 0; /* Ensure small images align properly on small screens */
+    }
+
+    .small-images img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .item-image-main img {
+        max-height: 250px; /* Adjust main image size on smaller screens */
+    }
+
+    .product-card {
+        width: 90%; /* Make card take more width on smaller screens */
+        padding: 10px; /* Less padding for smaller screens */
+    }
+
+    /* Adjust button sizes for smaller screens */
+    .btn-lg {
+        padding: 8px 16px; /* Smaller padding for smaller screens */
+        font-size: 1rem; /* Smaller font size for buttons */
+    }
+}
